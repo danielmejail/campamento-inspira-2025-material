@@ -1,0 +1,148 @@
+\paragraph{Preguntas para investigar}
+
+\begin{enumerate}[label=P\arabic*]
+	\item\label{item:mcd}
+		?`Qu\'e es el \emph{m\'aximo com\'un divisor} (MCD) de dos enteros?
+	\item\label{item:farey}
+		?`Qu\'e es una \emph{sucesión de Farey} de orden $3$?
+		?`De orden $7$? ?`Y de orden $n$? ¿Cu\'antos elementos hay en una sucesi\'on de
+		Farey de orden $3$? ?`Y en una de orden $7$? ?`Y de orden $11$?
+		?`Pod\'es hacer alguna conjetura? Representar la fracci\'on $\frac m n$ con el punto
+		$(m,n)$ en el plano. Dibujar todas las entradas de la sucesi\'on de Farey de orden $7$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Una pregunta para explorar}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:cuadratica}
+		Encontrar todas las soluciones a la ecuaci\'on $x^2-6x+8=0$ en $\Enterosmod[15]$.
+	\seti
+\end{enumerate}
+%
+
+Probar o refutar las siguientes afirmaciones, y arreglar, si es posible.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:divisibilidad:combinacion}
+		Si $d\mid a$ y $d\mid b$, y $x,y\in\Enteros$, entonces $d\mid (ax+by)$.
+	\item\label{item:divisibilidad:orden}
+		Si $a\mid b$ entonces $a\leq b$.
+	\item\label{item:divisibilidad:negativa}
+		Si $a\nmid b$ y $a\nmid c$, entonces $a\nmid bc$.
+	\item\label{item:divisibilidad:ocho}
+		Si $2\nmid n$ entonces $8\mid (n^2-1)$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Problemas num\'ericos}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:algoritmo:euclides}
+		Usar el algoritmo de Euclides para hallar el MCD de $29$ y $11$.
+	\item\label{item:algoritmo:continua:racional}
+		Usar el procedimiento de \ref{item:algoritmo:euclides}
+		para probar que:
+    		\begin{displaymath}
+			\frac{29}{11}\,=\,2+\frac 1 {1+\frac 1 {1+\frac 1 {1+\frac 1 {3}}}}
+			\text{ .}
+		\end{displaymath}
+		%
+    		Esta es la \emph{fracci\'on continua simple} de $\frac{29}{11}$.
+	\item\label{item:algoritmo:continua:real}
+		Cualquier n\'umero real puede ser aproximado por una fracci\'on
+		$\frac{a}{b}$ con cualquier grado de precisi\'on, si permitimos que el denominador
+		$b$ sea suficientemente grande.
+		El tama\~no del denominador es el precio que debemos pagar por una buena aproximaci\'on
+		?`Cu\'al es el precio que pagamos aproximando $\frac{29}{11}$ por las siguientes fracciones?
+    		\begin{displaymath}
+			2\quad\text{,}\quad
+			2+\frac{1}{1}\quad\text{,}\quad
+			2+\frac{1}{1+\frac{1}{1}}\quad\text{,}\quad
+			2+\frac{1}{1+\frac{1}{1+\frac{1}{1}}}
+			\text{ .}
+		\end{displaymath}
+		%
+	\item\label{item:unidades}
+		Escribir todos los elementos de $\Unidadesmod[7]$, $\Unidadesmod[15]$, $\Unidadesmod[18]$ y
+		$\Unidadesmod[21]$ ?`Cu\'ales de ellos son c\'{\i}clicos? ?`Ten\'es alguna conjetura?
+	\item\label{item:logaritmos}
+		Construir una tabla de ``logaritmos'' para $\Unidadesmod[17]$.
+	\item\label{item:logaritmos:ecuaciones}
+		Usar la tabla de \ref{item:logaritmos} para resolver las siguientes
+		ecuaciones en $\Enterosmod[17]$:
+		\begin{displaymath}
+			x^2\,=\,2\quad\text{,}\quad
+			7x^2\,=\,6\quad\text{,}\quad
+			x^3\,=\,3\text{ .}
+		\end{displaymath}
+		%
+		% \begin{enumerate}[label=(\alph*)]
+			% \item\label{item:logaritmos:cuadraticos}
+				% $x^2=2$;
+			% \item\label{item:logaritmos:cuadraticos:bis}
+				% $7x^2=6$;
+			% \item\label{item:logaritmos:cubicos}
+				% $x^3=3$.
+		% \end{enumerate}
+		% %
+	\item\label{item:mcd:ejemplos}
+		Encontrar el MCD de cada uno de los siguientes pares de enteros:
+		\begin{displaymath}
+			(6,15)\quad\text{,}\quad
+			(36,49)\quad\text{,}\quad
+			(483,291)\quad\text{,}\quad
+			(11413,11289)\text{ .}
+		\end{displaymath}
+		%
+		% \begin{enumerate}[label=(\alph*)]
+			% \item\label{item:mcd:ejemplos:i}
+				% $6,\;15$;
+			% \item\label{item:mcd:ejemplos:ii}
+				% $36,\;49$;
+			% \item\label{item:mcd:ejemplos:iii}
+				% $483,\;291$;
+			% \item\label{item:mcd:ejemplos:iv}
+				% $11413,\;11289$.
+		% \end{enumerate}
+		% %
+		Comparar la eficiencia de cada uno de los siguientes tres m\'etodos a medida que los enteros
+		involucrados crecen.
+		\begin{enumerate}[label=(\arabic*)]
+			\item\label{item:mcd:metodos:divisores}
+				Escribir todos los divisores de cada entero y elegir, de entre los divisores
+				comunes, el m\'aximo.
+			\item\label{item:mcd:metodos:factores}
+				Factorizar cada entero como producto de n\'umeros primos y luego hallar el MCD.
+			\item\label{item:mcd:metodos:euclides}
+				Usar el algoritmo de Euclides.
+		\end{enumerate}
+		%
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Ingenio}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:bases}
+		Hallar tres d\'{\i}gitos no nulos $a_0$, $a_1$ y $a_2$, y una base $b$ tal que
+		$(a_0a_1a_2)_b=2\,(a_0a_1a_2)_{10}$.
+	\item\label{item:bases:fracciones}
+		La suma $1+\frac{1}{3}+\frac{1}{5}+\cdots+\frac{1}{2n-1}$ para $n>1$ nunca es un entero.
+	% \seti
+% \end{enumerate}
+% %
+% 
+% % Agrego uno sencillito pero que puede estar divertido (de tipo ``explorativo''):
+% \begin{enumerate}[label=P\arabic*]
+	% \conti
+	% \item\label{item:extras}
+		% Se marcan en una circunferencia $8$ puntos distintos.
+		% Probar que se pueden formar la misma cantidad de tri\'angulos que de pent\'agonos
+		% usando dichos puntos cómo v\'ertices.
+\end{enumerate}
+%
+

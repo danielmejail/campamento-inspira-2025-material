@@ -1,0 +1,162 @@
+
+\paragraph{Preguntas para investigar}
+% Con las siguientes preguntas, trabajaremos en comprender definiciones.
+\begin{enumerate}[label=P\arabic*]
+	\item\label{item:perfectos}
+		?`Qu\'e es un \emph{n\'umero perfecto}?
+		Encontrar cuatro ejemplos.
+	\item\label{item:mersenne}
+		?`Qu\'e es un \emph{primo de Mersenne}?
+		Encontrar cuatro ejemplos.
+	\item\label{item:divisores}
+		?`Qu\'e significa la expresi\'on
+		\begin{math}
+			\sum_{d\mid N,\,d>0}\,\frac 1 d
+		\end{math}?
+		Calcular el valor de esta sumatoria para algunos valores
+		chicos de $N$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Una pregunta para reflexionar}
+Podemos nombrar varios sistemas matem\'aticos, cada uno con sus operaciones.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:sistemas}
+		Compar\'a los siguientes sistemas matem\'aticos:
+		$\Enteros$, $\Racionales$, $\Reales$, $2\Enteros$,
+		$\Enterosmod[3]$, $\Enterosmod[6]$, $\Enterosmod[8]$,
+		$\Enterosmod[11]$. Cada uno de ellos posee dos
+		operaciones: suma y multiplicaci\'on ?`Cu\'ales de
+		ellos se parecen teniendo en cuenta las propiedades
+		de sus operaciones?
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Una pregunta para explorar}
+Podemos construir nuevos sistemas. Consideremos el conjunto de los
+polinomios en $\indet$ con coeficientes en $\Enterosmod[3]$; denotamos
+este conjunto por $\polinomios{\Enterosmod[3]}$.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:polinomios}
+		Las expresiones $f(\indet)=\indet^2+2\indet+1$ y
+		$g(\indet)=2\indet^2+\indet+1$ pertenecen a
+		$\polinomios{\Enterosmod[3]}$. Calcul\'a
+		$f(\indet)+g(\indet)$ y $f(\indet)\cdot g(\indet)$.
+	\item\label{item:polinomios:factorizar}
+		Factoriz\'a $\indet^4-1$ como producto de polinomios
+		lineales en $\polinomios{\Enterosmod[5]}$.
+		Factoriz\'a $\indet^6-1$ como producto de polinomios
+		lineales en $\polinomios{\Enterosmod[7]}$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Propiedades de los n\'umeros enteros}
+Para responder algunas preguntas planteadas en estos problemas,
+debemos recurrir a varias propiedades que comunmente asociamos
+con los n\'umeros enteros. Hac\'e una lista de tales propiedades
+y determin\'a si esa lista es suficiente para discutir cada pregunta
+sobre aritm\'etica. La lista podr\'a ir cambiando a medida que
+nos formulemos nuevas preguntas. Si la lista es adecuada,
+podremos considerar que es una descripci\'on aceptable de los
+n\'umeros enteros.
+
+A continuaci\'on consideramos algunas propiedades de la divisibilidad.
+Demostr\'a o refut\'a cada una
+?`Es posible enmendar las afirmaciones falsas para que sean v\'alidas?
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:divisibilidad:reflexiva}
+		Si $a\in\Enteros$, entonces $a\mid a$.
+	\item\label{item:divisibilidad:simetrica}
+		Si $a,b\in\Enteros$ y $a\mid b$, entonces $b\mid a$.
+	\item\label{item:divisibilidad:transitiva}
+		Si $a,b,c\in\Enteros$ y $a\mid b$ y $b\mid c$,
+		entonces $a\mid c$.
+	\item\label{item:divisibilidad:multiplos}
+		Si $a,b,c\in\Enteros$ y $a\mid b$, entonces $a\mid bc$.
+	\item\label{item:divisibilidad:sumas}
+		Si $a,b,c\in\Enteros$ y $a\mid b$ y $a\mid c$,
+		entonces $a\mid (b+c)$.
+	\item\label{item:divisibilidad:primos}
+		Si $a,b,c\in\Enteros$ y $a\mid bc$, entonces
+		$a\mid b$ o $a\mid c$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Problemas num\'ericos}
+Sigamos trabajando con los conceptos que tenemos.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:bases:cambiar}
+		Usando divisi\'on en base siete, escrib\'{\i}
+		$N=(34652)_7$ en las bases dos, cinco y once.
+	\item\label{item:bases:escribir}
+		Escrib\'{\i} cada uno de los siguientes n\'umeros
+		en base tres: $3$, $9$, $27$, $243$, $1/3$, $1/9$
+		y $1/27$. Escribilos en base dos ?`Qu\'e pod\'es
+		decir?
+	\item\label{item:modulares:varios}
+		Hall\'a los siguientes elementos en $\Enterosmod[5]$:
+		$-1$, $1/2$, $2/3$, $\sqrt{-1}$ ?`Cu\'antos de
+		\'estos pod\'es encontrar en $\Enterosmod[6]$?
+		?`Cu\'antos en $\Enterosmod[10]$, en $\Enterosmod[11]$
+		y en $\Enterosmod[13]$?
+	\item\label{item:modulares:cuadrados}
+		Hac\'e una lista de los cuadrados perfectos en cada uno
+		de los siguientes sistemas: $\Enterosmod[5]$,
+		$\Enterosmod[17]$, $\Enterosmod[19]$,
+		$\Enterosmod[21]$ ?`Cu\'antos cuadrados hay en cada
+		caso? ?`Ten\'es alguna conjetura?
+	\item\label{item:divisores:perfectos}
+		Calcul\'a los valores de las siguientes sumatorias:
+		\begin{math}
+			\sum_{d\mid 6,\,d>0}\,\frac 1 d
+		\end{math},
+		\begin{math}
+			\sum_{d\mid 28,\,d>0}\,\frac 1 d
+		\end{math}
+		?`Pod\'es hacer alguna conjetura?
+		?`Si agregamos un ejemplo m\'as?
+		Calcul\'a
+		\begin{math}
+			\sum_{d\mid 496,\,d>0}\,\frac 1 d
+		\end{math}
+		y compar\'a su valor con los valores de las sumatorias
+		anteriores.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{El arte de contar}
+Un \emph{conjunto} est\'a conformado por \emph{elementos}.
+Si nos quedamos s\'olo con algunos de los elementos de un conjunto,
+tenemos un \emph{subconjunto}.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:subconjuntos}
+		Si $S=\{a,b,c,d\}$, ?`cu\'antos subconjuntos de
+		$S$ distintos hay?
+		Si $T=\{c,d,e,f,g,h\}$, ?`cu\'antos hay en este caso?
+	\seti
+\end{enumerate}
+%
+Los conjuntos $S$ y $T$ tienen cuatro y seis elementos, respectivamente
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:conjuntos:operaciones}
+		?`Cu\'antos elementos hay en $S\cap T$?
+		?`Cu\'antos elementos hay en $S\cup T$?
+	\item\label{item:conjuntos:operaciones:bis}
+		En general, si $S$ y $T$ son conjuntos cualesquiera y
+		sabemos cu\'antos elementos tiene $S$ y cu\'antos
+		tiene $T$, ?`podemos saber cu\'antos elementos tienen
+		$S\cap T$ y $S\cup T$?
+\end{enumerate}
+%
+

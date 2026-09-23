@@ -1,0 +1,167 @@
+\paragraph{Pregunta para investigar}
+
+\begin{enumerate}[label=P\arabic*]
+	\item\label{item:piso}
+		?`Qu\'e es la \emph{funci\'on piso} $\piso a$?
+		Calcular $\piso{\sqrt 5}$, $\piso{\sqrt{-2}}$,
+		$\piso{\frac{\sqrt 7} 2}$, $\piso{2+\sqrt 3}$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Una pregunta para explorar}
+El sistema $\polinomios{\Enterosmod[3]}$ se parece mucho a $\Enteros$.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:cuerpos}
+		Consider\'a el polinomio $\indet^2+1$ en
+		$\polinomios{\Enterosmod[3]}$ y describ\'{\i} todos
+		los elementos del sistema matem\'atico
+		$F=\big(\polinomios{\Enterosmod[3]}\big)_{\indet^2+1}$.
+	\seti
+\end{enumerate}
+%
+En el problema \ref{item:cuerpos}, el sistema $F$ es el sistema de
+restos de la divisi\'on de polinomios en $\polinomios{\Enterosmod[3]}$
+por el polinomio $\indet^2+1$.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:cuerpos:producto}
+		Calcul\'a el producto $(\indet+1)\,(\indet+2)$ en $F$.
+	\item\label{item:cuerpos:inversos}
+		Calcul\'a los siguientes inversos en $F$:
+		\begin{displaymath}
+			\frac 1 \indet\quad\text{,}\quad
+			\frac 1{\indet^2+2}\quad\text{,}\quad
+			\frac 1{\indet^2+2\indet+2}\text{ .}
+		\end{displaymath}
+		%
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Propiedades de los n\'umeros enteros}
+Demostr\'a o refut\'a cada una de las siguientes propiedades.
+En caso de que una afirmaci\'on sea falsa en
+general, enmendarla, si es posible.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:cancelatividad}
+		Si $ac=ab$, entonces $a=b$ ?`Es cierta en $\Enteros$?
+		?`Es cierta en $\polinomios[\raizcuarta] \Enteros$?
+		?`Lo es en $\Enterosmod[m]$?
+	\item\label{item:naturales:clausura}
+		Si $a,b\in\Enteros$, entonces el producto $ab\in\Naturales$,
+		si y s\'olo si $a$ y $b$ son \emph{ambos} naturales.
+	\item\label{item:cuadrados}
+		Si $a\neq 0$, entonces $a^2>0$ ?`Es esta afirmaci\'on
+		cierta en $\Enteros$? ?`Es cierta en otros sistemas
+		que conozcas?
+	\item\label{item:division}
+		Si $a,b\in\Enteros$, entonces existen enteros
+		$q$ y $r$ tales que $a=bq+r$ y $0\leq r<|b|$.
+	\item\label{item:reducibilidad}
+		Todo entero $>1$ posee alg\'un divisor primo.
+	\item\label{item:discreto}
+		No existen enteros entre $0$ y $1$.
+	\item\label{item:mersenne}
+		Si $a$ y $n$ son enteros positivos, $>1$ y
+		$a^n-1$ es primo, entonces necesariamente
+		$a=2$ y $n$ debe ser primo.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Problemas num\'ericos}
+El algoritmo de Euclides puede tener aplicaciones inesperadas.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:mcd}
+		Usando el algoritmo de Euclides, calcul\'a
+		el m\'aximo com\'un divisor
+		$\mcd{7469,2464}$.
+	\item\label{item:diofantica}
+		Encontr\'a una soluci\'on a la ecuaci\'on
+		$2464x+7469y=77$ con $x$ e $y$ enteros.
+	\item\label{item:inversos}
+		Hall\'a las soluciones a la ecuaci\'on
+		$2464x=11$ en $\Enterosmod[7469]$.
+		Hall\'a las soluciones a $2464x=9$ en $\Enterosmod[7469]$.
+	\item\label{item:logaritmos}
+		Hac\'e una tabla de logaritmos en $\Unidadesmod[29]$
+		y us\'a tu tabla para encontrar todas las soluciones
+		a las siguientes ecuaciones en $\Enterosmod[29]$:
+		\begin{displaymath}
+			13x^3\,=\,21\quad\text{;}\quad
+			x^4\,=\,7\quad\text{;}\quad
+			x^7\,=\,18\quad\text{;}\quad
+			x^7\,=\,1\text{ .}
+		\end{displaymath}
+		%
+	\item\label{item:primitivas}
+		Hall\'a todas las ra\'{\i}ces primitivas en
+		$\Unidadesmod[19]$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{La t\'ecnica de generalizaci\'on}
+Veamos si podemos generalizar el algoritmo de Euclides a otras situaciones.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:generalizacion}
+		Describ\'{\i} el algoritmo de Euclides de tal manera
+		que sea posible aplicar el proceso descrito en los
+		problemas P6, P7 y P8 de la Lista~\#2 a $\sqrt 3$ y
+		a otros irracionales.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{El arte de contar}
+Escribimos $\indice A$ para indicar la cantidad de elementos de un
+conjunto.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:conjuntos}
+		Demostr\'a las siguientes afirmaciones ($A$, $B$,
+		$C$ y $D$ son conjuntos):
+		\begin{enumerate}[label=(\alph*)]
+			\item
+				\begin{math}
+					\indice{A\cup B}=
+					\indice A+\indice B
+						-\indice{A\cap B}
+				\end{math};
+			\item
+				\begin{math}
+					\indice{A\cup B\cup C}=
+					\indice A+\indice B+\indice C
+						-\indice{A\cap B}
+						-\indice{B\cap C}
+						-\indice{C\cap A}
+					+\indice{A\cap B\cap C}
+				\end{math};
+			\item
+				\begin{math}
+					\indice{A\cup B\cup C\cup D}=
+					\text{?`?}
+				\end{math}
+		\end{enumerate}
+		%
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Ingenio}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:factorial}
+		?`Cu\'antos ceros aparecen al final de la expansi\'on
+		decimal de $\factorial{100}$ (cien factorial)?
+		?`Cu\'antos ceros aparecen al final de la expansi\'on
+		\emph{binaria} de $\factorial{100}$? En ambos casos,
+		la pregunta hace referencia a $\enbase{10}{100}$.
+\end{enumerate}
+%
+

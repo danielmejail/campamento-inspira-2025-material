@@ -1,0 +1,133 @@
+{\small
+\begin{quote}
+	\textit{
+		[C]uidado con el matem\'atico y los otros que hacen falsas profec\'{\i}as.
+		El peligro ya existe de que los matem\'aticos hayan hecho un pacto con el
+		Diablo para oscurecer el esp\'{\i}ritu y confinar al Hombre dentro de las
+		ataduras del Infierno.
+	}
+	\hfill ---San Agustín
+\end{quote}
+}
+\paragraph{Preguntas para investigar}
+\begin{enumerate}[label=P\arabic*]
+	
+	\item\label{item:factorizacion}
+		?`Qu\'e se entiende por la \emph{descomposici\'on canónica}
+		de un entero en primos positivos?
+	\item\label{item:criba}
+		Usa la criba de Erat\'ostenes para hacer una lista de todos
+		los primos menores que $200$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Una pregunta para explorar}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:gaussianos}
+		Considera los n\'umeros complejos $a + bi$ con $a$ y $b$ en
+		$\Enteros$ (donde $\raizcuarta = \sqrt{-1}$).
+		Estos n\'umeros forman bajo la adici\'on y multiplicaci\'on
+		un sistema matem\'atico no muy diferente de $\Enteros$.
+		Este sistema com\'unmente se denota por $\EnterosGauss$
+		¿Cu\'ales de las propiedades en P7--P12 de la Lista~\#1
+		y en P4--P7 de la Lista~\#2 se cumplen en $\EnterosGauss$?
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Probar o refutar, y arreglar si es posible}
+Haz una lista de propiedades de $\Enteros$ que creas que da
+una buena descripci\'on de este sistema matemático
+¿Tu lista es suficiente para deducir todo lo que has probado hasta
+ahora sobre $\Enteros$?
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:division:orden}
+		Si $a$ y $b$ son enteros positivos y $a \mid b$ entonces $a \leq b$.
+	\item\label{item:division:cancelacion}
+		Si $a$, $b$  $c$ son enteros y $ab \mid ac$, entonces $b \mid c$.
+	\item\label{item:multiplicacion:negativo}
+		Si $a > b$ y $c < 0$ entonces $ac < bc$.
+		Verdadero en $\Enteros$.
+	\item\label{item:division:suma}
+		Si $a \mid b$ y $a \mid (b + c)$, entonces $a \mid c$.
+	\item\label{item:division:algoritmo}
+		Dados cualquier par de n\'umeros naturales $a, b \in \mathbb{N}$,
+		existen enteros $q$ y $r$ tales que $a = bq + r$ y $0 \leq r < b$.
+	\item\label{item:division:alternativa}
+		Si $a \mid bc$ y $a \nmid b$ entonces $a \mid c$.
+	\item\label{item:primos:sucesion}
+		Si $p_1 = 2$, $p_2 = 3$, $p_3 = 5$, \ldots, $p_n$ son los primeros $n$
+		n\'umeros primos, entonces $P_n = p_1 p_2 p_3 \cdots p_n + 1$
+		es primo para todo $n$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Problemas num\'ericos}
+Algo para reflexionar.
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:modulares:unidades}
+		Escribe todos los elementos de $\Unidadesmod[22]$,
+		de $\Unidadesmod[23]$, de $\Unidadesmod[25]$,
+		de $\Unidadesmod[105]$
+		¿Cu\'ales tienen ra\'{\i}ces primitivas?
+		¿Alguna conjetura?
+	\item\label{item:modulares:logaritmos}
+		Construye una tabla de logaritmos para $\Unidadesmod[19]$.
+		Encuentra todos los cuadrados perfectos en $\Unidadesmod[19]$.
+	\item\label{item:fracciones:procedimiento}
+		Describe (y justifica, si es posible) el proceso representado
+		por la siguiente tabla para calcular las convergentes sucesivas
+		en P9 de la fracción continua en P10 de la Lista~\#2.
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|c|c|}
+				& & 2 & 1 & 1 & 1 & 3  \\
+				\hline
+				0 & 1 & 2 & 3 & 5 & 8 & 29 \\ \hline 
+				1 & 0 & 1 & 1 & 2 & 3 & 11 \\
+				\hline	
+			\end{tabular}
+			%
+		\end{center}
+		?`Notaste algo interesante sobre los determinantes de $2 \times 2$
+		\begin{displaymath}
+			\begin{vmatrix} 1 & 2 \\ 0 & 1 \end{vmatrix}, \quad
+			\begin{vmatrix} 2 & 3 \\ 1 & 1 \end{vmatrix}, \quad
+			\begin{vmatrix} 3 & 5 \\ 1 & 2 \end{vmatrix}, \quad
+			\begin{vmatrix} 5 & 8 \\ 2 & 3 \end{vmatrix}, \quad
+			\begin{vmatrix} 8 & 29 \\ 3 & 11 \end{vmatrix}
+				\text{ ?}
+		\end{displaymath}
+		%
+	\item\label{item:fracciones:convergencia}
+		Procede con la fracci\'on $\frac{7469}{2463}$ como en P8, P9 y P10 de la Lista~\#2.
+		Grafica los valores de todas las convergentes en la recta real y observa
+		cuidadosamente las relaciones entre las convergentes y la fracci\'on misma,
+		as\'{\i} como las relaciones entre las convergentes entre s\'{\i}.
+		Al aproximar la fracci\'on mediante las convergentes de su expansi\'on
+		en fracci\'on continua,
+		¿el precio a pagar por la precisi\'on en cada caso es inesperadamente alto? ¿Bajo?
+	\item\label{item:ecuaciones:lineales}
+		Usa tus resultados de los dos \'ultimos problemas para encontrar una soluci\'on
+		entera para cada una de las ecuaciones diofánticas lineales:
+		$29x + 11y = 1$ y $7469x + 2463y = 1$.
+	\seti
+\end{enumerate}
+%
+
+\paragraph{Ingenio}
+\begin{enumerate}[label=P\arabic*]
+	\conti
+	\item\label{item:reticulo}
+		Considera un sistema de coordenadas cartesianas rectangulares en un plano.
+		A los puntos con coordenadas enteras los llamamos \emph{puntos reticulares}.
+		Demuestra que ning\'un tri\'angulo cuyos v\'ertices sean todos puntos reticulares
+		puede ser un tri\'angulo equil\'atero.
+	\seti
+\end{enumerate}
+%
+
